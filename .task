@@ -30,3 +30,8 @@ int lab12() {
 	cout << "C = " << C << endl;
 	return 0;
 }
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	test12();
+}
