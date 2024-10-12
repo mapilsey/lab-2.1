@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+#include <vector>
+
+using namespace std;
+
+int lab12() {
+	double A, B, C;
+	cout << "Введите значение А: ";
+	cin >> A;
+	cout << "Введите значение B: ";
+	cin >> B;
+	cout << "Введите значение C: ";
+	cin >> C;
+
+	if (A < B && B < C) {
+		A *= 2;
+		B *= 2;
+		C *= 2;
+	}
+	else {
+		A = -A;
+		B = -B;
+		C = -C;
+	}
+	cout << "Новые значения переменных: " << endl;
+	cout << "A = " << A << endl;
+	cout << "B = " << B << endl;
+	cout << "C = " << C << endl;
+	return 0;
+}
